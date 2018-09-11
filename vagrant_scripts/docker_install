@@ -1,0 +1,14 @@
+#!/bin/bash
+sudo yum install -y docker
+sudo groupadd docker
+sudo usermod -aG docker vagrant
+sudo systemctl start docker
+sudo systemctl enable docker
+##install alpine
+#docker search alpine-linux
+#docker pull alpine
+#docker run -it alpine sh
+#docker ps
+#docker stop
+#docker rm
+#docker rmi

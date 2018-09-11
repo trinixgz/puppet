@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo rpm -Uvh https://yum.puppet.com/puppet5/puppet5-release-el-7.noarch.rpm >> ~/install.log
+sudo yum install -y puppetserver  >> ~/install.log
+sudo systemctl start puppetserver >> ~/install.log
+sudo systemctl enable puppetserver >> ~/install.log
+puppet --version ~/puppetversion.txt >> ~/install.log
